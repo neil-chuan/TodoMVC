@@ -9,8 +9,13 @@
 		<!-- CSS overrides - remove if you don't need it -->
 		<link rel="stylesheet" href="css/app.css">
 	</head>
+	<style>
+    [v-cloak] {
+      display: none;
+    }
+	</style>
 	<body>
-		<section class="todoapp" id="todoapp">
+		<section class="todoapp" id="todoapp" v-cloak>
 			<header class="header">
 				<h1>todos</h1>
 				<input @keyup.enter="addItem" class="new-todo" placeholder="What needs to be done?" v-app-focus>
